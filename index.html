@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLATED — Legal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1722;
+    color: #ECF0F6;
+    line-height: 1.7;
+    padding: 0;
+  }
+  header {
+    background: #131C2C;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: italic;
+    color: #ECF0F6;
+    letter-spacing: 0.03em;
+  }
+  nav {
+    display: flex;
+    gap: 8px;
+    padding: 16px 24px;
+    background: #1A2332;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: #7C96B2;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 3px;
+    transition: all 0.15s;
+  }
+  nav a:hover, nav a.active {
+    color: #2B8EFF;
+    border-color: rgba(43,142,255,0.35);
+    background: rgba(43,142,255,0.08);
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+  .doc-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ECF0F6;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .doc-date {
+    font-size: 12px;
+    color: #415870;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2B8EFF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  p {
+    font-size: 15px;
+    color: #7C96B2;
+    margin-bottom: 14px;
+  }
+  ul {
+    margin: 0 0 14px 0;
+    padding-left: 20px;
+  }
+  li {
+    font-size: 15px;
+    color: #7C96B2;
+    margin-bottom: 8px;
+  }
+  strong {
+    color: #ECF0F6;
+    font-weight: 500;
+  }
+  a {
+    color: #2B8EFF;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .contact-block {
+    background: #1D2B3F;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 8px;
+  }
+  .contact-block p {
+    margin-bottom: 4px;
+  }
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 12px;
+    color: #415870;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>SLATED</h1>
+</header>
+<nav>
+  <a href="#" class="active" onclick="show('privacy', this); return false;">Privacy Policy</a>
+  <a href="#" onclick="show('terms', this); return false;">Terms of Service</a>
+</nav>
+<main>
+  <section id="privacy" class="active">
+    <div class="doc-title">Privacy Policy</div>
+    <div class="doc-date">Last updated: 17 April 2026</div>
+<h2>1. Who We Are</h2>
+<p>SLATED is operated by Marshall Patterson, an individual developer based in the United Kingdom.</p>
+<div class="contact-block">
+  <p><strong>Data Controller:</strong> Marshall Patterson</p>
+  <p>24 Jacob Drive, Middlesbrough, TS4 3AY, United Kingdom</p>
+  <p><strong>Contact:</strong> <a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a></p>
+</div>
+
+<h2>2. About This Policy</h2>
+<p>This Privacy Policy explains what personal data SLATED collects from you, why we collect it, how we use it, and what rights you have in relation to it.</p>
+<p>SLATED is subject to the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. Marshall Patterson is the data controller responsible for your personal data.</p>
+
+<h2>3. Age Requirement</h2>
+<p>SLATED is intended for users aged 16 and over. By creating an account, you confirm that you are at least 16 years old. SLATED surfaces video game content from third-party databases which may include titles rated for mature audiences. We do not knowingly collect personal data from anyone under the age of 16. If you believe a person under 16 has created an account, please contact us at <a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a> and we will delete the account and associated data promptly.</p>
+
+<h2>4. What Data We Collect</h2>
+<p><strong>Account data:</strong> Your display name, email address, and encrypted password, provided when you create an account.</p>
+<p><strong>Preference data:</strong> Your selected gaming platforms and notification preferences, provided during onboarding and editable in your profile.</p>
+<p><strong>Usage data:</strong> Games you have saved to your tracker, including the game title, cover image URL, and release date.</p>
+<p><strong>Technical data:</strong> Your device type, operating system, and app version may be collected automatically for the purpose of diagnosing errors and improving the app. We do not collect your precise location.</p>
+<p><strong>Communications data:</strong> If you contact us directly by email, we will retain that correspondence.</p>
+
+<h2>5. How We Collect Your Data</h2>
+<ul>
+  <li>Directly from you when you create an account, set your preferences, or save games to your tracker</li>
+  <li>Automatically when you use the app, through our authentication and database provider</li>
+  <li>From third-party services as described in Section 7</li>
+</ul>
+
+<h2>6. Why We Collect Your Data and Our Legal Basis</h2>
+<p><strong>Contract performance (Article 6(1)(b)):</strong> We process your account data, preference data, and tracker data because it is necessary to provide the SLATED service you have signed up for.</p>
+<p><strong>Legitimate interests (Article 6(1)(f)):</strong> We process limited technical data to maintain the security, stability, and performance of the app.</p>
+<p><strong>Consent (Article 6(1)(a)):</strong> Where we send you notifications about tracked game releases, we do so only where you have opted in. You can withdraw this consent at any time in your profile settings.</p>
+
+<h2>7. Third Parties We Share Data With</h2>
+<p><strong>Supabase Inc.</strong> We use Supabase to store your account data, preferences, and tracked games. Supabase stores data on servers located in the European Union. Supabase is GDPR compliant and acts as a data processor on our behalf. See <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</p>
+<p><strong>IGDB (Twitch Interactive, Inc.):</strong> We use the IGDB API to retrieve game data. We do not share your personal data with IGDB. Requests to IGDB are made server-side and do not contain any personally identifiable information.</p>
+<p><strong>Google AdMob:</strong> SLATED displays advertisements served by Google AdMob. AdMob may collect and use data including your device's advertising identifier to serve relevant ads. On iOS, you will be asked for permission to track your advertising identifier in accordance with Apple's App Tracking Transparency framework. On Android, you can opt out of personalised ads through your device settings. See <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+<p>We do not sell your personal data to any third party.</p>
+
+<h2>8. How Long We Keep Your Data</h2>
+<p>We retain your personal data for as long as your account is active. If you delete your account, we will permanently delete all personal data associated with it within 30 days, except where we are required to retain certain records by law.</p>
+
+<h2>9. Your Rights Under UK GDPR</h2>
+<ul>
+  <li><strong>Right to access:</strong> Request a copy of the personal data we hold about you.</li>
+  <li><strong>Right to rectification:</strong> Correct inaccurate or incomplete data through your profile settings or by contacting us.</li>
+  <li><strong>Right to erasure:</strong> Request deletion of your personal data via the Delete Account option in the app, or by contacting us.</li>
+  <li><strong>Right to restrict processing:</strong> Ask us to limit how we use your data in certain circumstances.</li>
+  <li><strong>Right to data portability:</strong> Request your data in a structured, machine-readable format.</li>
+  <li><strong>Right to object:</strong> Object to processing based on legitimate interests.</li>
+  <li><strong>Right to withdraw consent:</strong> Withdraw consent for notifications at any time in your profile settings.</li>
+</ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a>. We will respond within 30 days at no charge.</p>
+
+<h2>10. Complaints</h2>
+<p>If you believe we have not handled your data correctly, you have the right to lodge a complaint with the UK's data protection authority:</p>
+<div class="contact-block">
+  <p><strong>Information Commissioner's Office (ICO)</strong></p>
+  <p>Website: <a href="https://ico.org.uk" target="_blank">ico.org.uk</a></p>
+  <p>Helpline: 0303 123 1113</p>
+</div>
+<p style="margin-top: 14px;">We would appreciate the opportunity to address your concerns before you contact the ICO, so please reach out to us first.</p>
+
+<h2>11. Data Security</h2>
+<p>We take reasonable technical and organisational measures to protect your personal data. Your password is encrypted and never stored in plain text. All data in transit is encrypted using TLS. Access to the database is restricted and protected by row-level security policies.</p>
+
+<h2>12. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we do, we will update the date at the top of this document. If the changes are significant, we will notify you through the app.</p>
+
+<h2>13. Contact</h2>
+<div class="contact-block">
+  <p><strong>Marshall Patterson</strong></p>
+  <p><a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a></p>
+  <p>24 Jacob Drive, Middlesbrough, TS4 3AY, United Kingdom</p>
+</div>
+  </section>
+  <section id="terms">
+    <div class="doc-title">Terms of Service</div>
+    <div class="doc-date">Last updated: 17 April 2026</div>
+<h2>1. About These Terms</h2>
+<p>These Terms of Service govern your use of the SLATED mobile application. By creating an account or using the app, you agree to these terms. If you do not agree, please do not use SLATED.</p>
+<p>SLATED is operated by Marshall Patterson, an individual developer based in the United Kingdom. References to "we", "us", and "our" refer to Marshall Patterson.</p>
+
+<h2>2. Eligibility</h2>
+<p>You must be at least 16 years old to use SLATED. By creating an account, you confirm that you meet this requirement. We reserve the right to terminate accounts where we have reason to believe the user does not meet this requirement.</p>
+
+<h2>3. Your Account</h2>
+<p>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. Please notify us immediately at <a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a> if you suspect unauthorised access.</p>
+<p>You agree to provide accurate information when creating your account. You may not create an account on behalf of another person or use a false identity.</p>
+
+<h2>4. What SLATED Does</h2>
+<p>SLATED is a video game release tracker. It allows you to browse upcoming game releases sourced from the IGDB database, save games to a personal tracker, and receive notifications about tracked releases.</p>
+<p>We do not create, own, or control any of the game content displayed in the app. All game data is sourced from the IGDB API. We make no representations about the accuracy or completeness of this data.</p>
+
+<h2>5. Acceptable Use</h2>
+<p>You agree not to use SLATED to:</p>
+<ul>
+  <li>Violate any applicable law or regulation</li>
+  <li>Attempt to gain unauthorised access to our systems or another user's account</li>
+  <li>Interfere with or disrupt the operation of the app or its servers</li>
+  <li>Reverse engineer, decompile, or disassemble any part of the app</li>
+  <li>Use the app for any commercial purpose without our prior written consent</li>
+</ul>
+
+<h2>6. Third-Party Content</h2>
+<p>Game data displayed in SLATED is sourced from IGDB, owned by Twitch Interactive, Inc. This content may include materials that are the intellectual property of their respective owners. We display this content for informational purposes only and claim no ownership over it.</p>
+<p>If you believe any content displayed in SLATED infringes your intellectual property rights, please contact us at <a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a>.</p>
+<p>Trailer content is sourced via YouTube and is subject to <a href="https://www.youtube.com/t/terms" target="_blank">YouTube's Terms of Service</a>.</p>
+
+<h2>7. Intellectual Property</h2>
+<p>The SLATED name, logo, design, and original code are the intellectual property of Marshall Patterson. You may not reproduce, distribute, or create derivative works from any part of SLATED without prior written permission.</p>
+
+<h2>8. Advertising</h2>
+<p>SLATED is free to use and is supported by advertising served through Google AdMob. We may introduce an optional paid tier to remove advertising. You will be notified of any such changes before they take effect.</p>
+
+<h2>9. Notifications</h2>
+<p>If you opt in to release notifications, we will send you notifications relating to games you have tracked. You can opt out at any time in your profile settings. We will not send you unsolicited marketing communications.</p>
+
+<h2>10. Termination</h2>
+<p>You may delete your account at any time through the app. We reserve the right to suspend or terminate your account if you violate these Terms of Service. Upon termination, your personal data will be deleted in accordance with our Privacy Policy.</p>
+
+<h2>11. Disclaimers</h2>
+<p>SLATED is provided on an "as is" and "as available" basis. We make no warranties about the reliability, accuracy, or availability of the app. Game release dates and other information may be inaccurate or out of date. We are not responsible for decisions made based on information displayed in the app.</p>
+
+<h2>12. Limitation of Liability</h2>
+<p>To the fullest extent permitted by law, Marshall Patterson shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of SLATED. Our total liability for any claim shall not exceed the amount you have paid us in the 12 months preceding the claim, or £100 if you have paid nothing.</p>
+<p>Nothing in these terms limits liability for death or personal injury caused by negligence, fraud, or any other liability that cannot be excluded under English law.</p>
+
+<h2>13. Governing Law</h2>
+<p>These Terms of Service are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+<h2>14. Changes to These Terms</h2>
+<p>We may update these Terms of Service from time to time. We will notify you of significant changes through the app. Your continued use of SLATED after changes constitutes acceptance of the updated terms.</p>
+
+<h2>15. Contact</h2>
+<div class="contact-block">
+  <p><strong>Marshall Patterson</strong></p>
+  <p><a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a></p>
+  <p>24 Jacob Drive, Middlesbrough, TS4 3AY, United Kingdom</p>
+</div>
+  </section>
+</main>
+<footer>
+  <p>SLATED &copy; 2026 Marshall Patterson. All rights reserved.</p>
+</footer>
+<script>
+  function show(id, link) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    link.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+</body>
+</html>
