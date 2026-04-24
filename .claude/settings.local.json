@@ -9,7 +9,11 @@
       "Bash(node -e \"require\\('sharp'\\)\")",
       "Bash(node -e \"require\\('@napi-rs/canvas'\\)\")",
       "Bash(npm install *)",
-      "Bash(node generate_favicon_node.mjs)"
+      "Bash(node generate_favicon_node.mjs)",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
