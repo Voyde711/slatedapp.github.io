@@ -8,7 +8,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #1A2332 0%, #1D3048 100%);
+    background: linear-gradient(135deg, #131C2C 0%, #1A2332 50%, #1D3048 100%);
     color: #ECF0F6;
     min-height: 100vh;
     display: flex;
@@ -24,15 +24,15 @@
     text-align: center;
   }
   .wordmark {
-    font-family: -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
+    font-family: 'Arial Black', 'Arial Narrow', -apple-system, sans-serif;
     font-size: 96px;
-    font-weight: 800;
+    font-weight: 900;
     font-style: italic;
     color: #ECF0F6;
-    letter-spacing: 0.03em;
+    letter-spacing: -0.01em;
     line-height: 1;
     margin-bottom: 8px;
-    text-shadow: 0 2px 40px rgba(43,142,255,0.15);
+    text-shadow: 0 2px 40px rgba(43,142,255,0.2);
   }
   .wordmark-accent {
     width: 40px;
@@ -61,10 +61,13 @@
     transition: opacity 0.15s;
   }
   .badge-link:hover { opacity: 1; }
-  .coming-soon-note {
-    font-size: 12px;
-    color: #415870;
-    margin-top: 8px;
+  .badge-link img {
+    height: 48px;
+    display: block;
+  }
+  .badge-link.google img {
+    height: 71px;
+    margin: -11px 0;
   }
   footer {
     padding: 24px;
@@ -102,11 +105,11 @@
     <a href="#" class="badge-link">
       <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" height="48" />
     </a>
-    <a href="#" class="badge-link">
-      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="48" />
+    <a href="#" class="badge-link google">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
     </a>
   </div>
-  <p class="coming-soon-note">Coming soon to iOS and Android</p>
+
 </main>
 <footer>
   <span class="copyright">© 2026 Marshall Patterson</span>
