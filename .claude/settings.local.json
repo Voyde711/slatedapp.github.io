@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python generate_favicon.py)",
+      "Bash(py generate_favicon.py)",
+      "Bash(ls /c/Python*)",
+      "Read(//c/Users/Marshall/AppData/Local/Programs/**)",
+      "Bash(node -e \"require\\('canvas'\\)\")",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(node -e \"require\\('@napi-rs/canvas'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node generate_favicon_node.mjs)"
+    ]
+  }
+}

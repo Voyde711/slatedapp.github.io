@@ -4,12 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SLATED — Terms of Service</title>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Syne:wght@400;600&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --base: #1A2332;
+    --base-dark: #131C2C;
+    --card: #1D2B3F;
+    --signal: #2B8EFF;
+    --i1: #ECF0F6;
+    --i2: #7C96B2;
+    --i3: #607898;
+    --b0: rgba(255,255,255,0.07);
+    --b1: rgba(255,255,255,0.12);
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: #0f1722;
     color: #ECF0F6;
     line-height: 1.7;
@@ -20,15 +32,17 @@
     background: #131C2C;
   }
   .back-wordmark {
-    font-family: -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
-    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(72px, 25vw, 160px);
     font-weight: 800;
     font-style: italic;
-    color: #ECF0F6;
+    color: var(--i1);
     text-decoration: none;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    display: block;
   }
-  .back-wordmark:hover { color: #2B8EFF; }
+  .back-wordmark:hover { color: var(--signal); text-decoration: none; }
   main {
     max-width: 720px;
     margin: 0 auto;
@@ -92,12 +106,55 @@
   .contact-block p {
     margin-bottom: 4px;
   }
+  .go-back {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--i3);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .go-back:hover { color: var(--i2); text-decoration: none; }
+  .go-back-top { margin-bottom: 28px; }
+  .go-back-bottom { margin-top: 32px; }
   footer {
-    text-align: center;
-    padding: 32px 24px;
-    font-size: 12px;
-    color: #415870;
-    border-top: 1px solid rgba(255,255,255,0.07);
+    position: relative;
+    z-index: 1;
+    padding: 20px 24px;
+    border-top: 1px solid var(--b0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  footer .copyright {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--i3);
+  }
+  footer a {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--i3);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.15s;
+  }
+  footer a:hover { color: var(--i2); text-decoration: none; }
+  @media (max-width: 480px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 </style>
 </head>
@@ -106,6 +163,7 @@
   <a href="/" class="back-wordmark">SLATED</a>
 </header>
 <main>
+  <a href="/" class="go-back go-back-top">&lt; GO BACK</a>
   <div class="doc-title">Terms of Service</div>
   <div class="doc-date">Last updated: 17 April 2026</div>
 
@@ -170,9 +228,14 @@
   <p><a href="mailto:slatedapp@gmail.com">slatedapp@gmail.com</a></p>
   <p>24 Jacob Drive, Middlesbrough, TS4 3AY, United Kingdom</p>
 </div>
+  <a href="/" class="go-back go-back-bottom">&lt; GO BACK</a>
 </main>
 <footer>
-  <p>SLATED &copy; 2026 Marshall Patterson. All rights reserved.</p>
+  <span class="copyright">© 2026 Marshall Patterson</span>
+  <div class="footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </div>
 </footer>
 </body>
 </html>
