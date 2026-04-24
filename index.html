@@ -54,15 +54,15 @@
   }
 
   .wordmark {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: min(20vw, 160px);
+    font-family: 'Barlow Condensed', 'Arial Black', sans-serif;
+    font-size: clamp(72px, 25vw, 160px);
     font-weight: 800;
     font-style: italic;
     color: var(--i1);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     padding-right: 0.08em;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     animation: fadeUp 0.6s ease both;
   }
 
@@ -87,11 +87,28 @@
 
   .badges {
     display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
     animation: fadeUp 0.6s ease 0.3s both;
+    opacity: 0;
+  }
+
+  .badge-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+  }
+
+  .badge-link img {
+    width: 140px;
+    display: block;
+  }
+
+  .badge-link.google img {
+    width: 160px;
+    margin: -11px -10px;
   }
 
   .badge-link {
@@ -100,15 +117,6 @@
     display: block;
   }
   .badge-link:hover { opacity: 1; }
-
-  .badge-link img {
-    height: 44px;
-    display: block;
-  }
-  .badge-link.google img {
-    height: 65px;
-    margin: -10px 0;
-  }
 
   footer {
     position: relative;
@@ -164,12 +172,16 @@
   <div class="wordmark-accent"></div>
   <p class="tagline">Track upcoming game releases. Know what's dropping, on what platform, and exactly how long until launch.</p>
   <div class="badges">
-    <a href="#" class="badge-link">
-      <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" />
-    </a>
-    <a href="#" class="badge-link google">
-      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
-    </a>
+    <div class="badge-col">
+      <a href="#" class="badge-link">
+        <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" />
+      </a>
+    </div>
+    <div class="badge-col">
+      <a href="#" class="badge-link google">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+      </a>
+    </div>
   </div>
 </main>
 <footer>
