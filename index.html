@@ -8,7 +8,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #1A2332;
+    background: linear-gradient(135deg, #1A2332 0%, #1D3048 100%);
     color: #ECF0F6;
     min-height: 100vh;
     display: flex;
@@ -25,13 +25,20 @@
   }
   .wordmark {
     font-family: -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
-    font-size: 72px;
+    font-size: 96px;
     font-weight: 800;
     font-style: italic;
     color: #ECF0F6;
     letter-spacing: 0.03em;
     line-height: 1;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 40px rgba(43,142,255,0.15);
+  }
+  .wordmark-accent {
+    width: 40px;
+    height: 3px;
+    background: #2B8EFF;
+    margin: 0 auto 28px;
   }
   .signal { color: #2B8EFF; }
   .tagline {
@@ -41,39 +48,19 @@
     max-width: 420px;
     margin-bottom: 48px;
   }
-  .buttons {
+  .badges {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-bottom: 16px;
   }
-  .store-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #ECF0F6;
-    color: #1A2332;
-    text-decoration: none;
-    padding: 14px 24px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 600;
+  .badge-link {
+    opacity: 0.7;
     transition: opacity 0.15s;
-    min-width: 160px;
-    justify-content: center;
   }
-  .store-button:hover { opacity: 0.85; }
-  .store-button.coming-soon {
-    background: rgba(255,255,255,0.08);
-    color: #7C96B2;
-    border: 1px solid rgba(255,255,255,0.12);
-    cursor: default;
-  }
-  .store-button svg { flex-shrink: 0; }
-  .store-label { display: flex; flex-direction: column; text-align: left; }
-  .store-label span:first-child { font-size: 10px; font-weight: 400; opacity: 0.7; }
-  .store-label span:last-child { font-size: 15px; font-weight: 700; }
+  .badge-link:hover { opacity: 1; }
   .coming-soon-note {
     font-size: 12px;
     color: #415870;
@@ -107,27 +94,16 @@
 <body>
 <main>
   <div class="wordmark">SLATED</div>
+  <div class="wordmark-accent"></div>
   <p class="tagline">
     Track upcoming game releases. Know what's dropping, on what platform, and exactly how long until launch.
   </p>
-  <div class="buttons">
-    <a href="#" class="store-button coming-soon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-      </svg>
-      <div class="store-label">
-        <span>Download on the</span>
-        <span>App Store</span>
-      </div>
+  <div class="badges">
+    <a href="#" class="badge-link">
+      <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" height="48" />
     </a>
-    <a href="#" class="store-button coming-soon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M3.18 23.76c.3.17.64.19.96.08l12.45-7.2-2.78-2.78-10.63 9.9zM20.7 10.16L17.6 8.37l-3.14 3.14 3.14 3.14 3.12-1.81c.89-.52.89-1.96-.02-2.68zM3.18.24L13.81 10.87 11.03 13.65.66 2.04C.34 1.45.37.72.7.29.87.06 1.15-.03 1.43 0c.24.02.47.1.65.21l1.1.03z"/>
-      </svg>
-      <div class="store-label">
-        <span>Get it on</span>
-        <span>Google Play</span>
-      </div>
+    <a href="#" class="badge-link">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="48" />
     </a>
   </div>
   <p class="coming-soon-note">Coming soon to iOS and Android</p>
@@ -136,7 +112,6 @@
   <span class="copyright">© 2026 Marshall Patterson</span>
   <a href="/privacy">Privacy Policy</a>
   <a href="/terms">Terms of Service</a>
-  <a href="mailto:slatedapp@gmail.com">Contact</a>
 </footer>
 </body>
 </html>
